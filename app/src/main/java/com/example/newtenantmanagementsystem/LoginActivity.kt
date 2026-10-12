@@ -43,8 +43,10 @@ class LoginActivity : AppCompatActivity() {
 
             // Open MainActivity using an explicit Intent
             val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("EMAIL", email)
             startActivity(intent)
             finish()
+
         }
 
         // Navigate to RegisterActivity
